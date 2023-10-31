@@ -1,6 +1,19 @@
 <html>
 
 <style>
+     @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .container {
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+
      @font-face {
         font-family: 'Montserrat';
         src: url(fonts/Montserrat-Regular.ttf), format('truetype');
@@ -98,10 +111,10 @@
                     <a class="nav-link" href="about.html">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PORTFOLIO</a>
+                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="contact.html">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -136,27 +149,39 @@
     <br>
     <br>
 
-    <section>
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <img src="images/ProfilePicture.png" class="img-fluid rounded-3" alt="Picture of Nur Jannah"
-                        style="height: auto; width: 100%;">
-                </div>
-                <div class="col-md-4">
-                    <h2 class="mt-5" style="color: #fff; font-family: 'Brandon Text'; font-weight: bolder;">WHO AM I?
-                    </h2>
-                    <p style="color:#fff; font-family: 'Montserrat'; font-weight: 500;">Hello there, I am Nur Jannah, a
-                        student studying in Republic Polytechnic.
-                        I am keen to building my skillsets and my strengths to offer my skills to
-                        those who need them. I am interested in both programming and UI/UX Design.</p>
-                    <button class="btn btn-blue rounded-pill"
-                        style="color: #fff; font-family: 'Brandon Text'; width: 120pt;">TO PORTFOLIO
-                        <i class="fa-solid fa-angle-right" style="text-align: end;"></i> </button>
-                </div>
+   <section>
+    <div class="container mt-5" style="opacity: 0;">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <img src="images/ProfilePicture.png" class="img-fluid rounded-3" alt="Picture of Nur Jannah"
+                    style="height: auto; width: 100%;">
+            </div>
+            <div class="col-md-4">
+                <h2 class="mt-5" style="color: #fff; font-family: 'Brandon Text'; font-weight: bolder;">WHO AM I?</h2>
+                <p style="color:#fff; font-family: 'Montserrat'; font-weight: 500;">Hello there, I am Nur Jannah, a
+                    student studying in Republic Polytechnic. I am keen to building my skillsets and my strengths to
+                    offer my skills to those who need them. I am interested in both programming and UI/UX Design.</p>
+                <button class="btn btn-blue rounded-pill" style="color: #fff; font-family: 'Brandon Text'; width: 120pt;">TO PORTFOLIO <i class="fa-solid fa-angle-right" style="text-align: end;"></i> </button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .container {
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+</style>
+
 
     <br>
     <br>
