@@ -1,10 +1,11 @@
 <html>
 
 <style>
-     @keyframes fadeIn {
+    @keyframes fadeIn {
         from {
             opacity: 0;
         }
+
         to {
             opacity: 1;
         }
@@ -14,7 +15,7 @@
         animation: fadeIn 1s ease-in-out forwards;
     }
 
-     @font-face {
+    @font-face {
         font-family: 'Montserrat';
         src: url(fonts/Montserrat-Regular.ttf), format('truetype');
         font-style: normal;
@@ -28,7 +29,7 @@
 
     body {
         background-color: rgb(5, 73, 122);
-        background: linear-gradient(rgba(5, 73, 122, 1) 20%, rgba(126, 142, 167, 1), rgba(240, 165, 72, 1));
+        background: linear-gradient(rgba(5, 73, 122, 1) 60%, rgba(126, 142, 167, 1), rgba(240, 165, 72, 1));
 
         .navbar {
             background: linear-gradient(rgba(5, 73, 122, 1), rgba(0, 0, 0, 0));
@@ -68,9 +69,9 @@
         .btn-blue {
             background-color: rgba(5, 51, 122, 100);
             border-color: rgba(5, 51, 122, 100);
-
-
+            color: #fff;
         }
+
 
         .centered-image {
             display: flex;
@@ -85,8 +86,8 @@
 </style>
 
 <head>
-    <title>Nur Jannah | Home </title>
-    <link rel="icon" type="image/png" href="images/LogoNoText.png">
+    <title>Nur Jannah | Portfolio </title>
+    <link rel="icon" type="image/png" href="/images/LogoNoText.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -106,13 +107,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                    <a class="nav-link  active" href="portfolio.html">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">CONTACT</a>
@@ -120,31 +121,75 @@
             </ul>
         </div>
     </nav>
+    <br>
+    <br>
+    <br>
 
-    <br>
-    <br>
-    <br>
 
     <section>
         <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-4 text-center">
-                    <h1>
-                        <div class="centered-image">
-                            <img src="images/LogoWithText.png" class="img-fluid" style="height: auto; width: 100%;" alt="Logo">
-                        </div>
-                    </h1>
-                    <div class="text-center">
-                        <a href="portfolio.html" style="text-decoration: none;">
-                        <button class="btn btn-blue rounded-pill mt-3" 
-                            style="color:#fff; font-family: 'Brandon Text'; width: 120pt;"> EXPLORE </button>
-                        </a>
+            <p
+                style="font-family: 'Brandon Text'; font-size: 30px; color: #fff; font-weight: bold; margin-top: 50px; text-align: center;">
+               Movies App </p>
+
+        </div>
+    </section>
+
+    <div class="d-flex justify-content-center align-items-center" style="margin-top: 10px; margin-bottom: 30px;">
+        <img src="images/MovieApp.png" class="img-fluid" style="max-width: 25%;" alt="Movie Application">
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <a href="https://github.com/nrjbms/MoreMoviesLesson12" style="display: flex; justify-content: center; align-items: center; text-decoration: none;">
+        <button type="button" class="btn btn-blue rounded-pill">
+            Visit The Codes <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </button>
+    </a>
+    
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 style="color: #fff; font-family: 'Brandon Text'; font-weight: bold; ">COMMENTS</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p style="color:#fff; font-family: 'Montserrat'; font-weight: 500; font-size: 20px;">
+                           This application was made to have a database that constantly updated when the user edits or changes
+                           the information in them, which is movies. So movies added will have different trating which correspodn to different images
+                           when shown the list. Even if the user clicks off, the application, information is still stored.  
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-4">
+                        <h2 style="color: #fff; font-family: 'Brandon Text'; font-weight: bold; ">SKILLS USED</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <i class="fa-brands fa-java" style="font-size: 55px; color:white"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+
+    <br> <br>
+
+    <br>
+    <br>
+    <br>
+
+
     <br>
     <br>
     <br>
@@ -152,43 +197,9 @@
     <br>
     <br>
 
-   <section>
-    <div class="container mt-5" style="opacity: 0;">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <img src="images/ProfilePicture.png" class="img-fluid rounded-3" alt="Picture of Nur Jannah"
-                    style="height: auto; width: 100%;">
-            </div>
-            <div class="col-md-4">
-                <h2 class="mt-5" style="color: #fff; font-family: 'Brandon Text'; font-weight: bolder;">WHO AM I?</h2>
-                <p style="color:#fff; font-family: 'Montserrat'; font-weight: 500;">Hello there, I am Nur Jannah, a
-                    student studying in Republic Polytechnic. I am keen to building my skillsets and my strengths to
-                    offer my skills to those who need them. I am interested in both programming and UI/UX Design.</p>
-                    <a href="portfolio.html">
-                        <button class="btn btn-blue rounded-pill" style="color: #fff; font-family: 'Brandon Text'; width: 120pt;">
-                            TO PORTFOLIO 
-                            <i class="fa-solid fa-angle-right" style="text-align: end;"></i>
-                        </button>
-                    </a>
-            </div> 
-        </div>
-    </div>
-</section>
 
-<style>
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
 
-    .container {
-        animation: fadeIn 1s ease-in-out forwards;
-    }
-</style>
+
 
 
     <br>
@@ -200,17 +211,21 @@
 
 
 </body>
+
 <footer style="padding: 20px 0;">
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <p style="color: #fff; font-family: 'Brandon Text', sans-serif; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+                <p
+                    style="color: #fff; font-family: 'Brandon Text', sans-serif; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
                     MY SOCIALS
                 </p>
                 <div style="color: #fff; font-size: 30px;">
                     <a href="https://www.github.com/nrjbms" style="color: #fff; "><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/nur-jannah-69946023b/" style="color: #fff;"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/nrjbms/"> <i class="fa-brands fa-instagram" style="color: #fff;"></i> </a>
+                    <a href="https://www.linkedin.com/in/nur-jannah-69946023b/" style="color: #fff;"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/nrjbms/"> <i class="fa-brands fa-instagram"
+                            style="color: #fff;"></i> </a>
                 </div>
             </div>
         </div>
