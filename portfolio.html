@@ -83,6 +83,12 @@
             margin-top: 30px;
         }
     }
+
+    .carousel-control-prev, .carousel-control-next {
+            z-index: 1; 
+           /* Ensure controls appear above content */
+        }
+
 </style>
 
 <head>
@@ -131,42 +137,216 @@
     <section>
         <div class="container mt-5">
             <p style="font-family: 'Brandon Text'; font-size: 30px; color: #fff; font-style: italic; margin-top: 50px;">
-                DESIGN ILLUSTRATIONS</p>
+                DESIGN</p>
                 
         </div>
     </section>
-    
-    <section style="font-family: 'Montserrat';">
-        <div class="container my-5">
-            <div class="row row-cols-4 row-cols-md-3 g-4">
-                <div class="">
-                    <div class="card">
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title" style="font-weight: bold;">DA:NS Poster</h5>
-                            <p class="card-text">2021</p>
-                            <a href="work1.html"> <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button> </a>
+
+    <section>
+        <div id="DesignCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container my-5">
+                        <div class="row row-cols-3 row-cols-md-3 g-4">
+                            <!-- card 1 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">DA:NS Poster</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work1.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 2 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">Personal Poster</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work2.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">Name Card Design</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work3.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title" style="font-weight: bold;">Work In Progress</h5>
-                            <p class="card-text">YEAR</p>
-                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title" style="font-weight: bold;">Work In Progress</h5>
-                            <p class="card-text">YEAR</p>
-                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> </button>
+                <!-- carousel item 2 -->
+                <div class="carousel-item">
+                    <div class="container my-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- card 4 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">Little Toy Kingdom Web Design</h5>
+                                        <p class="card-text">2023</p>
+                                        <a href="work.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 5 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">Super Skin Web Design</h5>
+                                        <p class="card-text">2023</p>
+                                        <a href="work5.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More\ <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 6 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">Kris+ Konnect App Design</h5>
+                                        <p class="card-text">2023</p>
+                                        <a href="work6.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#DesignCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon box-shadow-lg" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#DesignCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon box-shadow-lg" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <p style="font-family: 'Brandon Text'; font-size: 30px; color: #fff; font-style: italic; margin-top: 50px;">
+                CODING</p>
+                
+        </div>
+    </section>
+    <section>
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container my-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- card 7 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">DA:NS Poster</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work1.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 8 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">DA:NS Poster</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work1.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 9 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">DA:NS Poster</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work1.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel item 2 -->
+                <div class="carousel-item">
+                    <div class="container my-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- card 10 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">DA:NS Poster</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work1.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 11 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">DA:NS Poster</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work1.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 12 -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column align-items-center">
+                                        <h5 class="card-title" style="font-weight: bold;">DA:NS Poster</h5>
+                                        <p class="card-text">2021</p>
+                                        <a href="work1.html">
+                                            <button type="button" class="btn btn-blue rounded-pill mt-auto">Learn More <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
     
