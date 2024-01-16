@@ -82,6 +82,21 @@
         .container {
             margin-top: 30px;
         }
+
+        #myCarousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Adjust the height as needed */
+        }
+
+        /* Center the images and videos within the carousel items */
+        .carousel-item img,
+        .carousel-item video {
+            max-width: 20%;
+            margin: auto;
+        }
+
     }
 </style>
 
@@ -130,25 +145,47 @@
         <div class="container mt-5">
             <p
                 style="font-family: 'Brandon Text'; font-size: 30px; color: #fff; font-weight: bold; margin-top: 50px; text-align: center;">
-               Movies Applivation </p>
+                Movies Applivation </p>
 
         </div>
     </section>
 
-    <div class="d-flex justify-content-center align-items-center" style="margin-top: 10px; margin-bottom: 30px;">
-        <img src="images/MovieApp.png" class="img-fluid" style="max-width: 25%;" alt="Movie Application">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+            <!-- Image Slide -->
+            <div class="carousel-item active">
+                <img src="images/MovieApp.png" class="d-block" alt="Image 1">
+            </div>
+            <!-- Video Slide -->
+            <div class="carousel-item">
+                <video class="d-block" autoplay muted loop>
+                    <source src="videos/MoviesAppVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    
+        <!-- Previous and Next buttons -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-
     <br>
     <br>
     <br>
 
-    <a href="https://github.com/nrjbms/MoreMoviesLesson12" style="display: flex; justify-content: center; align-items: center; text-decoration: none;">
+    <a href="https://github.com/nrjbms/MoreMoviesLesson12"
+        style="display: flex; justify-content: center; align-items: center; text-decoration: none;">
         <button type="button" class="btn btn-blue rounded-pill">
             Visit The Codes <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
         </button>
     </a>
-    
+
 
 
     <section>
@@ -160,9 +197,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p style="color:#fff; font-family: 'Montserrat'; font-weight: 500; font-size: 20px;">
-                           This application uses SQL Lite Database, Custom Adapter and List View in Android Studio to create a database of movies. 
-                           The user is able to key in the movie details such as the rating, which corresponds to an image and enter it into the database.
-                           They are also able to delete and edit the movie variables in the app to change any of them 
+                            This application uses SQL Lite Database, Custom Adapter and List View in Android Studio to
+                            create a database of movies.
+                            The user is able to key in the movie details such as the rating, which corresponds to an
+                            image and enter it into the database.
+                            They are also able to delete and edit the movie variables in the app to change any of them
                         </p>
                     </div>
                 </div>
@@ -172,11 +211,16 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p style="color:#fff; font-family: 'Montserrat'; font-weight: 500; font-size: 20px;">
-                           What I realised when coding this was that I was hard to ensure that the every page of the worked without crashing.
-                           During the time, I coded this, I almost had to recode some pages as they weren't working well with the others.
-                           I think the challenge was figuring out the problem with my codes and how they linked to each other. However, despite
-                           the amount of trial and error, I was able to code it successfully without any app crashes. I hope to customise the 
-                           app more and revisit it when learning more of how to make use of newer features in Android Studio.
+                            What I realised when coding this was that I was hard to ensure that the every page of the
+                            worked without crashing.
+                            During the time, I coded this, I almost had to recode some pages as they weren't working
+                            well with the others.
+                            I think the challenge was figuring out the problem with my codes and how they linked to each
+                            other. However, despite
+                            the amount of trial and error, I was able to code it successfully without any app crashes. I
+                            hope to customise the
+                            app more and revisit it when learning more of how to make use of newer features in Android
+                            Studio.
                         </p>
                     </div>
                 </div>
@@ -187,7 +231,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p style="color:#fff; font-family: 'Montserrat'; font-weight: 500; font-size: 20px;"> - Java </p>
+                        <p style="color:#fff; font-family: 'Montserrat'; font-weight: 500; font-size: 20px;"> - Java
+                        </p>
                         <i class="fa-brands fa-java" style="font-size: 55px; color:white"></i>
                     </div>
                 </div>

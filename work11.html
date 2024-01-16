@@ -82,6 +82,20 @@
         .container {
             margin-top: 30px;
         }
+
+        #myCarousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Adjust the height as needed */
+        }
+
+        /* Center the images and videos within the carousel items */
+        .carousel-item img,
+        .carousel-item video {
+            max-width: 20%;
+            margin: auto;
+        }
     }
 </style>
 
@@ -135,8 +149,30 @@
         </div>
     </section>
 
-    <div class="d-flex justify-content-center align-items-center" style="margin-top: 10px; margin-bottom: 30px;">
-        <img src="images/Reservation.png" class="img-fluid" style="max-width: 25%;" alt="Reservation App">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+            <!-- Image Slide -->
+            <div class="carousel-item active">
+                <img src="images/Reservation.png" class="d-block" alt="Image 1">
+            </div>
+            <!-- Video Slide -->
+            <div class="carousel-item">
+                <video class="d-block" autoplay muted loop>
+                    <source src="videos/ReservationAppVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    
+        <!-- Previous and Next buttons -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
     <br>
